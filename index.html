@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Happy 15th Anniversary Amma and Nanna!!!</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: aqua;
+            color: red;
+        }
+        div{
+            float: left;
+            margin: 50px;
+        }
+        button{
+            background-color: red;
+            color: blue;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy 15<sup>th</sup> Anniversary Amma and Nanna!!!</h1>
+    <button onclick="explore()">Explore!</button>
+    <h2>Catalogue</h2>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        for(let i=0;i<10;i++){
+            $("body").append(`<div id=${i}><img src="o.png" width='200' height='200' style="border: 5px ridge orange "><br><span>Undiscovered</span></div>`)
+        }
+        function explore(){
+            let x=Math.random()
+            const l=38
+            if(x<(5/l)){
+                $("#0 img").attr("src", "1.jpeg")
+                $("#0 span").html("Common Ringtail Possum<br>15 is the 6<sup>th</sup> semi-prime")
+            }else if(x<(10/l)){
+                $("#1 img").attr("src", "2.png")
+                $("#1 span").html("Common Brushtail Possum<br>15 is a deficient number")
+            }else if(x<(15/l)){
+                $("#2 img").attr("src", "3.png")
+                $("#2 span").html("Red-kneed Dotterel<br>15 is the 4<sup>th</sup> bell number")
+            }else if(x<(20/l)){
+                $("#3 img").attr("src", "4.png")
+                $("#3 span").html("Chestnut Teal<br>15 has an aliquiot sum of 9")
+            }else if(x<(25/l)){
+                $("#4 img").attr("src", "5.png")
+                $("#4 span").html("Superb Lyrebird<br>15 is a tranglular numer")
+            }else if(x<(28/l)){
+                $("#5 img").attr("src", "6.png")
+                $("#5 span").text("Brolga")
+            }else if(x<(31/l)){
+                $("#6 img").attr("src", "7.png")
+                $("#6 span").text("Fur Seal")
+            }else if(x<(32/l)){
+                $("#7 img").attr("src", "8.png")
+                $("#7 span").text("Orange Bellied Parrot")
+            }else if(x<(33/l)){
+                $("#8 img").attr("src", "9.png")
+                $("#8 span").text("Helmeted Honeyeater")
+            }else if(x<(38/l)){
+                $("#9 img").attr("src", "10.png")
+                $("#9 span").text("Australian Pelican")
+            }
+        }
+    </script>
+</body>
+</html>
